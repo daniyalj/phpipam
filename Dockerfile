@@ -9,7 +9,7 @@ ENV PATH=${WEB_REPO}/bin:${PATH} HOME=${WEB_REPO}
 
 # Install required deb packages
 RUN apt-get update && apt-get -y upgrade && \
-    apt-get install -y libgmp-dev libmcrypt-dev libpng12-dev libfreetype6-dev libjpeg-dev libpng-dev libldap2-dev && \
+    apt-get install -y libgmp-dev libmcrypt-dev libfreetype6-dev libjpeg-dev libpng-dev libldap2-dev && \
     rm -rf /var/lib/apt/lists/*
 
 # OpenShift permission modifications
